@@ -1,59 +1,63 @@
-{% extends 'base.html'  %}
+{% extends 'base.html' %}
 {% block index %}
 {% load static %}
 <style>
+  .hover01 figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .9s ease-in-out;
+    transition: .9s ease-in-out;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
 
-    .hover01 figure img {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .9s ease-in-out;
-      transition: .9s ease-in-out;
-      object-fit: fill;
-      width: 100%;
-      height: 100%;
-    }
-    .hover01 figure:hover img {
-      -webkit-transform: scale(1.3);
-      transform: scale(1.05);
-    }
-    figure {
-      width: 100%;
-      height: 100%;
- 
-      
-      overflow: hidden;
-      border-radius: 40px;
-    }
-    figure:hover+span {
-      bottom: -36px;
-      opacity: 1;
-      border-radius: 40px;
-    }
+  .hover01 figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.05);
+  }
 
-    
-    
-    </style>
+  figure {
+    width: 100%;
+    height: 100%;
+
+
+    overflow: hidden;
+    border-radius: 40px;
+  }
+
+  figure:hover+span {
+    bottom: -36px;
+    opacity: 1;
+    border-radius: 40px;
+  }
+</style>
 <div class="bg-img">
-<img style="width: 100% " src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1654589292601/9c3492aab8789d4c180f8006849d1a61.jpg">
+  <img style="width: 100% "
+    src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1654589292601/9c3492aab8789d4c180f8006849d1a61.jpg">
 </div>
 
-  <div class="banner-main" style="margin-top: 100px;"> 
-    <div class="banner1" style="margin-left: 90px;border-radius: 40px;width: 89%;">
-        <div class="hover01 column">
-            <div>
-                <figure><img  src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1653046265876/625cb84f2a63ee33ec016e35db128149.jpg" /></figure>
-            <h1 class="text-white" >Y55</h1>
-        </div> 
-  </div>
-  </div>
-  </div>
-  <div class="banner1" style="margin-left: 90px;border-radius: 40px;width: 89%;margin-top: 45px;">
+<div class="banner-main" style="margin-top: 100px;">
+  <div class="banner1" style="margin-left: 90px;border-radius: 40px;width: 89%;">
     <div class="hover01 column">
-        <div>
-            <figure><img  src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1652944576919/4eec92a22fba3737595427bab8306f84.jpg" /></figure>
+      <div>
+        <figure><img
+            src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1653046265876/625cb84f2a63ee33ec016e35db128149.jpg" />
+        </figure>
+        <h1 class="text-white">Y55</h1>
+      </div>
     </div>
+  </div>
 </div>
+<div class="banner1" style="margin-left: 90px;border-radius: 40px;width: 89%;margin-top: 45px;">
+  <div class="hover01 column">
+    <div>
+      <figure><img
+          src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1652944576919/4eec92a22fba3737595427bab8306f84.jpg" />
+      </figure>
+    </div>
+  </div>
 </div>
 
 
-  {% endblock %}
+{% endblock %}
